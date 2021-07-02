@@ -2,7 +2,7 @@
     {
         "name": "Get SSH Command",
         "icon": "fa fa-arrow-down",
-        "fileName": "slurmoncentos71HPC.actions.getsshcommand.ps1",
+        "fileName": "getsshcommand.ps1",
         "actionType": "String"
     }
 ]
