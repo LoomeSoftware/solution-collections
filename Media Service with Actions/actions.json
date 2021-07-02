@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Get Name",
+        "icon": "fa fa-arrow-down",
+        "fileName": "getname.ps1",
+        "actionType": "String"
+    },
+    {
+        "name": "Show Notification",
+        "icon": "fa fa-bell",
+        "fileName": "shownotification.ps1",
+        "actionType": "Notificaiton"
+    },
+    {
+        "name": "Get Url",
+        "icon": "fa fa-external-link",
+        "fileName": "geturl.ps1",
+        "actionType": "Url"
+    },
+    {
+        "name": "Download File",
+        "icon": "fa fa-download",
+        "fileName": "downloadfile.ps1",
+        "actionType": "File"
+    }
+]
