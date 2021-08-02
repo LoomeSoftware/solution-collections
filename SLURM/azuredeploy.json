@@ -264,7 +264,7 @@
       },
       "vnetID":"[resourceId('Microsoft.Network/virtualNetworks',variables('networkSettings').virtualNetworkName)]",
       "subnetRef":"[concat(variables('vnetID'),'/subnets/',variables('networkSettings').subnet.dse.name)]",
-      "templateBaseUrl":"https://raw.githubusercontent.com/smith1511/hpc/master/slurm-on-centos7.1-hpc2/",
+      "templateBaseUrl":"https://raw.githubusercontent.com/LoomeSoftware/solution-collections/main/SLURM/",
       "installationCLI":"[concat('bash azuredeploy.sh ', variables('masterVMName'), ' ', variables('workerVMName'), ' ', parameters('workerNodeCount'), ' ', parameters('hpcUserName'), ' ', variables('templateBaseUrl'), ' ', parameters('clusterFilesystemLocation'), ' ', variables('imageOffer'))]"
    },
    "resources":[
