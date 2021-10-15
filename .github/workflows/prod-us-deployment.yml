@@ -1,0 +1,16 @@
+name: Upload To Production US solution collections
+on:
+  push:
+      branches: [ main ]
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    environment: Production US
+    steps:
+      - uses: actions/checkout@v2
+      - uses: bacongobbler/azure-blob-storage-upload@v1.2.0
+        with:
+          account_name: ${{ secrets.ACCOUNT_NAME }}
+          sas_token: ${{ secrets.SAS_TOKEN }}
+          container_name: ${{ secrets.CONTAINER_NAME}}
+          source_dir: 'dist'
