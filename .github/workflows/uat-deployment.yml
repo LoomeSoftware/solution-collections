@@ -1,0 +1,15 @@
+name: Upload To UAT solution collections
+on:
+  push:
+      branches: [ main ]
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: bacongobbler/azure-blob-storage-upload@v1.2.0
+        with:
+          account_name: ${{ secrets.UAT_DEPLOYMENT_ACCOUNT_NAME }}
+          sas_token: ${{ secrets.UAT_DEPLOYMENT_SAS_TOKEN }}
+          container_name: ${{ secrets.UAT_DEPLOYMENT_CONTAINER_NAME}}
+          source_dir: 'dist'
