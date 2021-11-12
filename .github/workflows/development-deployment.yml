@@ -1,4 +1,4 @@
-name: Upload To UAT solution collections
+name: Upload To Development solution collections
 on:
   push:
       branches: [ development ]
